@@ -48,3 +48,11 @@ ON e.emp_no = ti.emp_no
 WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (de.to_date = '9999-01-01')
 ORDER BY emp_no;
+
+--Deliverable Three: extra tables/queries to answer additional questions 
+-- Table for number of potential mentors by title 
+SELECT COUNT (title) as mentors, title 
+INTO mentorship_titles 
+FROM mentorship_eligibility 
+GROUP BY title 
+ORDER BY mentors 
