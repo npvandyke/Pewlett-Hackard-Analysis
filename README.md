@@ -20,9 +20,29 @@ The images below show the number of retirement-eligible employees at Pewlett-Hac
 -
 -
 
-| Number of Retirement-Eligible Employees by Title |  Number of Mentorship-Eligible Employees (1550) |
+| Number of Retirement-Eligible Employees by Title |  Number of Retirement-Eligible Employees by Department |
 :-------------------------:|:-------------------------:
-![retirees_by_title](retirees_by_title.png) |  ![mentorship_eligibility](mentorship_eligibility.png)
+![retirees_by_title](retirees_by_title.png) |  ![retirees_by_dept](retirees_by_dept.png)
+
+
+THE ONE BY TITLE IS ALSO FILTERED FOR EMPLOYEES WHO HAVE ALREADY LEFT THE COMPANY WHAT IS GOING ON 300,024 employee numbers in
+"salaries" database ... 
+all distinct, so no raises? 
+also in "salaries"  table, 
+employee tenure always 1 yr 
+Soooo this is not reflecting 
+raises 
+Also most recent salary is from 
+2001 NOT reflecting 
+9999-01-01
+Most recent date before today 
+is 2002-08-01 according to 
+dept_emp table 
+SELECT COUNT (emp_no) FROM salaries 
+SELECT COUNT(DISTINCT(emp_no)) FROM salaries
+
+![mentorship_eligibility](mentorship_eligibility.png)
+
 
 
 # Summary:
